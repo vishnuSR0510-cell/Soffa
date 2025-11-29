@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SOFFA — About Us</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="soffa-nav navbar navbar-expand-lg">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold fs-2" href="index.html">SOFFA</a>
+
+    <!-- Right Icons (Mobile Only) -->
+    <div class="nav-icons d-lg-none d-flex align-items-center gap-3">
+      <a href="cart.html"><i class="bi bi-cart3 fs-4"></i></a>
+      <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+
+      <!-- Desktop Menu -->
+      <ul class="navbar-nav mx-auto d-none d-lg-flex gap-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Desktop Search + Cart -->
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <input class="search-box form-control rounded-pill px-3" placeholder="Search…">
+        <a href="cart.html"><i class="bi bi-cart3 fs-4"></i></a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu d-lg-none">
+        <a href="index.html" class="mobile-item">Home</a>
+        <a href="catalogo.html" class="mobile-item">Product</a>
+        <a href="aboutus.html" class="mobile-item">About</a>
+        <a href="contact.html" class="mobile-item">Contact</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+  <!-- HERO / MANIFESTO -->
+  <header class="hero d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-4 hero-title">Where comfort meets craft.</h1>
+      <p class="lead hero-sub">
+        We design furniture people live with — not just look at. Warm, considered, handcrafted.
+      </p>
+
+      <div class="mt-4 hero-cta d-flex justify-content-center gap-3">
+        <a href="catalogue.html" class="btn btn-espresso btn-lg">Explore Collection</a>
+        <a href="contact.html" class="btn btn-outline-wood btn-lg">Contact Stylist</a>
+      </div>
+
+      <blockquote class="manifesto mt-4 mx-auto">
+        <strong>We design for quiet mornings. For loud laughs. For real life. We are SOFFA.</strong>
+      </blockquote>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- WHO WE ARE -->
+    <section class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title">Who we are</h2>
+          <p class="section-lead">
+            SOFFA started with a single idea: furniture should belong to life, not interrupt it.
+            We craft warm, earth-toned sofas that become the room’s quiet center — functional, beautiful, human.
+          </p>
+
+          <p class="muted">
+            Our designs are inspired by Nordic restraint and Indian warmth. Each piece is shaped around lived moments:
+            conversations, afternoons, naps, celebrations. We don’t chase trends — we create timeless comfort.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="cover-img" style="background-image:url('interior1.jpg')" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="bg-sandrift py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="philosophy-img" style="background-image:url('interior2.jpg')" aria-hidden="true"></div>
+          </div>
+
+          <div class="col-lg-6">
+            <h2 class="section-title">Our philosophy</h2>
+            <p class="section-lead">
+              We believe in warm minimalism: quiet silhouettes, tactile fabrics, and proportions tuned to living rooms — not showrooms.
+            </p>
+
+            <ul class="list-unstyled mt-3 philosophy-list">
+              <li><strong>Design for living:</strong> Furniture shaped for conversation and comfort.</li>
+              <li><strong>Textures that invite touch:</strong> fabrics chosen to age beautifully.</li>
+              <li><strong>Longevity over novelty:</strong> pieces that belong for years, not seasons.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIALS LIBRARY -->
+    <section class="container py-5">
+      <h2 class="section-title text-center mb-4">Materials library</h2>
+      <p class="text-center muted mb-5">A curated selection chosen for feel, durability and natural warmth.</p>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-3">
+          <div class="material-card p-3 rounded">
+            <div class="mat-swatch swatch-velvet"></div>
+            <h6 class="mt-3">Velvet Luxe</h6>
+            <p class="small muted">Rich hand, depth of tone. Soft, stain-resistant finish.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="material-card p-3 rounded">
+            <div class="mat-swatch swatch-linen"></div>
+            <h6 class="mt-3">Linen Calm</h6>
+            <p class="small muted">Breathable, organic texture for everyday use.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="material-card p-3 rounded">
+            <div class="mat-swatch swatch-weave"></div>
+            <h6 class="mt-3">Premium Weave</h6>
+            <p class="small muted">Hard-wearing weave, pet & kid friendly.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="material-card p-3 rounded">
+            <div class="mat-swatch swatch-wood"></div>
+            <h6 class="mt-3">Kiln-dried hardwood</h6>
+            <p class="small muted">Stable frames treated to last across seasons.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAKERS / TEAM -->
+    <section class="bg-espresso text-white py-5">
+      <div class="container">
+        <h2 class="section-title text-white text-center mb-4">Meet the makers</h2>
+        <p class="text-center muted-light mb-5">People, not factories — the hands behind your sofa.</p>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-4">
+            <div class="maker-card p-4 rounded">
+              <div class="maker-photo" style="background-image:url('maker1.jpg')"></div>
+              <h6 class="mt-3">Rajesh Kumar</h6>
+              <p class="small muted-light">Master carpenter — 18 years</p>
+              <p class="small muted-light">Frames built with precision, every join inspected.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="maker-card p-4 rounded">
+              <div class="maker-photo" style="background-image:url('maker2.jpg')"></div>
+              <h6 class="mt-3">Meena Devi</h6>
+              <p class="small muted-light">Lead upholsterer — 12 years</p>
+              <p class="small muted-light">Seam work and fit that hold up to daily life.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="maker-card p-4 rounded">
+              <div class="maker-photo" style="background-image:url('maker3.jpg')"></div>
+              <h6 class="mt-3">Abdul Rahman</h6>
+              <p class="small muted-light">Fabric specialist</p>
+              <p class="small muted-light">Tests every cloth for colorfastness, stretch & feel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="container py-5">
+      <h2 class="section-title text-center mb-4">Our journey</h2>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">2018</div>
+          <div class="tl-body">The idea forms — a sofa built on a balcony becomes our first prototype.</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2020</div>
+          <div class="tl-body">We perfected our hardwood + HR foam composition.</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2021</div>
+          <div class="tl-body">Custom Comfort program: choose fabric, frame and cushion density.</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2024</div>
+          <div class="tl-body">Signature Scandinavian-Warm collection launched.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUSTAINABILITY -->
+    <section class="bg-sandrift py-5">
+      <div class="container">
+        <h2 class="section-title">Sustainability promise</h2>
+        <p class="muted mt-3">Luxury can be gentle. We commit to responsible sourcing and longer product life.</p>
+
+        <div class="row mt-4 g-4">
+          <div class="col-md-4">
+            <div class="sust-card p-3 rounded">
+              <i class="bi bi-tree fs-3"></i>
+              <h6 class="mt-2">Certified wood</h6>
+              <p class="small muted">Sustainably sourced, traceable timber.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="sust-card p-3 rounded">
+              <i class="bi bi-droplet fs-3"></i>
+              <h6 class="mt-2">Low VOC finishes</h6>
+              <p class="small muted">Safe for home, safe for family.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="sust-card p-3 rounded">
+              <i class="bi bi-arrow-repeat fs-3"></i>
+              <h6 class="mt-2">Repair-first policy</h6>
+              <p class="small muted">We repair, refresh, and replace — not discard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-title">Our vision</h2>
+          <p class="section-lead mt-3">
+            To be India’s leading comfort-first design studio — blending Scandinavian restraint with Indian soul.
+            A future where every home has a quiet, warm center: a SOFFA.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4 text-center text-white">
+    <div class="container">
+      <div class="mb-2">© 2025 SOFFA</div>
+      <small class="muted-light">Designed with care — handcrafted in India</small>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

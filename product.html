@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SOFFA — Product Details</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <a class="navbar-brand fw-bold fs-2" href="index.html">SOFFA</a>
+
+    <div class="d-flex d-lg-none align-items-center gap-3">
+      <a href="cart.html"><i class="bi bi-cart fs-4"></i></a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+
+      <!-- Desktop -->
+      <ul class="navbar-nav mx-auto d-none d-lg-flex gap-4">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu d-lg-none px-3 pb-3">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="catalogo.html" class="mobile-link">Product</a>
+        <a href="aboutus.html" class="mobile-link">About Us</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <input class="form-control rounded-pill px-3" placeholder="Search">
+        <a href="cart.html"><i class="bi bi-cart fs-4"></i></a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main class="container py-5">
+
+  <div class="row g-5">
+
+    <!-- LEFT: IMAGES -->
+    <div class="col-lg-6">
+      <div class="product-media">
+
+        <div id="imgWrap" class="main-image shadow-sm rounded">
+          <img id="mainImage" src="" alt="Product">
+        </div>
+
+        <div class="thumbs d-flex gap-2 mt-3">
+          <button class="thumb active" data-src=""><img id="thumb1"></button>
+          <button class="thumb" data-src=""><img id="thumb2"></button>
+          <button class="thumb" data-src=""><img id="thumb3"></button>
+          <button class="thumb" data-src=""><img id="thumb4"></button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT: INFO -->
+    <div class="col-lg-6">
+
+      <h1 class="product-title"></h1>
+      <p class="product-subtitle text-muted"></p>
+
+      <div class="d-flex align-items-center gap-3 mt-3">
+        <h3 class="price-tag"></h3>
+        <span class="badge bg-light text-dark">In stock</span>
+      </div>
+
+      <div class="section-line my-4"></div>
+
+      <!-- Options -->
+      <div class="mb-3">
+        <h6>Upholstery</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="option-btn" data-val="Velvet">Velvet</button>
+          <button class="option-btn" data-val="Linen">Linen</button>
+          <button class="option-btn" data-val="Premium Fabric">Premium Fabric</button>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h6>Color</h6>
+        <div class="d-flex gap-2">
+          <button class="color-dot beige" data-val="Sisal"></button>
+          <button class="color-dot brown" data-val="Pastel Brown"></button>
+          <button class="color-dot charcoal" data-val="Charcoal"></button>
+        </div>
+      </div>
+
+      <!-- Qty -->
+      <div class="d-flex align-items-center gap-3 mb-4">
+        <div class="input-group qty w-auto">
+          <button class="btn btn-outline-secondary btn-sm qty-minus">−</button>
+          <input type="text" class="form-control qty-input text-center" value="1">
+          <button class="btn btn-outline-secondary btn-sm qty-plus">+</button>
+        </div>
+
+        <button id="addToCartBtn" class="btn primary-btn px-4 py-2">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DETAILS -->
+  <section class="mt-5">
+    <h4>Product Details</h4>
+    <p class="product-description text-muted"></p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer text-center text-white py-3">© 2025 SOFFA</footer>
+
+<!-- JS -->
+<!-- CART DRAWER -->
+<aside id="cartDrawer" class="cart-drawer">
+  <div class="drawer-header d-flex justify-content-between align-items-center">
+    <h5>Your Cart</h5>
+    <button id="closeDrawer" class="btn btn-light btn-sm"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="drawer-body mt-3"></div>
+</aside>
+
+<div id="drawerOverlay" class="drawer-overlay"></div>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="cart.js"></script>   <!-- MUST LOAD FIRST -->
+<script src="product.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* ========================
+   GLOBAL DARK THEME
+======================== */
+body {
+    background: #2E1F1A;  /* Dark brown premium */
+    font-family: 'Inter', sans-serif;
+    color: #F3EDE6;
+}
+
+.cart-item-card {
+    background: #3B2A24;  /* Dark wood tone */
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s;
+}
+
+.cart-item-card:hover {
+    transform: translateY(-3px);
+}
+
+.cart-thumb {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2px solid #C9A074; /* Gold accent */
+}
+
+/* ========================
+   TEXT
+======================== */
+.item-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FDF9F4;
+}
+
+.item-options {
+    font-size: 14px;
+    color: #C9A074;  /* Gold tone */
+}
+
+.fw-bold {
+    color: #F3EDE6 !important;
+}
+
+/* ========================
+   QTY BUTTONS
+======================== */
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #C9A074;
+    background: #2E1F1A;
+    color: #C9A074;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.qty-btn:hover {
+    background: #C9A074;
+    color: #2E1F1A;
+}
+
+.qty-count {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ========================
+   REMOVE BUTTON
+======================== */
+.remove-btn {
+    color: #E86D55;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.remove-btn:hover {
+    color: #FF8F73;
+}
+
+/* ========================
+   SUMMARY BOX
+======================== */
+.cart-summary {
+    background: #3B2A24;
+    border-radius: 20px;
+    padding: 25px;
+    color: #F3EDE6;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Free Delivery Box */
+.free-delivery-box {
+    background: #C9A074;
+    color: #2E1F1A;
+    font-weight: 700;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+/* ========================
+   CHECKOUT BUTTON
+======================== */
+.checkout-btn {
+    background: #C9A074;
+    color: #2E1F1A;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #A68155;
+    color: #2E1F1A;
+}
+/* ============ THEME COLORS ============ */
+:root {
+    --cream: #f4efe8;
+    --brown: #6b4f35;
+    --dark: #2c2c2c;
+}
+
+/* ============ NAVBAR BASE ============ */
+.soffa-nav {
+    background: var(--cream);
+    border-bottom: 1px solid #e2d8cf;
+}
+
+.soffa-nav .navbar-brand {
+    color: var(--brown);
+    letter-spacing: 1px;
+}
+
+.soffa-nav .navbar-nav .nav-link {
+    color: var(--dark);
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.soffa-nav .navbar-nav .nav-link:hover,
+.soffa-nav .navbar-nav .nav-link.active {
+    color: var(--brown);
+}
+
+/* ============ SEARCH BOX ============ */
+.search-box {
+    border: 1px solid #c9b9a8;
+    background: white;
+    width: 200px;
+}
+
+/* ============ MOBILE MENU ============ */
+.mobile-menu {
+    background: var(--cream);
+    padding: 15px;
+    border-top: 1px solid #d9c9b8;
+}
+
+.mobile-item {
+    display: block;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border-bottom: 1px solid #e2d8cf;
+    text-decoration: none;
+}
+
+.mobile-item:last-child {
+    border-bottom: none;
+}
+
+.mobile-item:hover {
+    color: var(--brown);
+}
+
+/* Mobile icons */
+.nav-icons i {
+    color: var(--dark);
+}
+/* ============ THEME COLORS ============ */
+:root {
+    --cream: #f4efe8;
+    --brown: #6b4f35;
+    --dark: #2c2c2c;
+}
+
+/* ============ NAVBAR BASE ============ */
+.soffa-nav {
+    background: var(--cream);
+    border-bottom: 1px solid #e2d8cf;
+}
+
+.soffa-nav .navbar-brand {
+    color: var(--brown);
+    letter-spacing: 1px;
+}
+
+.soffa-nav .navbar-nav .nav-link {
+    color: var(--dark);
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.soffa-nav .navbar-nav .nav-link:hover,
+.soffa-nav .navbar-nav .nav-link.active {
+    color: var(--brown);
+}
+
+/* ============ SEARCH BOX ============ */
+.search-box {
+    border: 1px solid #c9b9a8;
+    background: white;
+    width: 200px;
+}
+
