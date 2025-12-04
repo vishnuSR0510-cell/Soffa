@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOFFA — Scandinavian Luxury Furniture</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOFFA — Handcrafted Indian Furniture</title>
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="home.css" />
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR (same theme as home) ================= -->
 <nav class="soffa-nav navbar navbar-expand-lg">
   <div class="container d-flex align-items-center justify-content-between">
 
-    <!-- Logo -->
     <a class="navbar-brand fw-bold fs-2" href="index.html">SOFFA</a>
 
-    <!-- Right Icons (Mobile Only) -->
     <div class="nav-icons d-lg-none d-flex align-items-center gap-3">
       <a href="cart.html"><i class="bi bi-cart3 fs-4"></i></a>
-      <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <i class="bi bi-list fs-1"></i>
       </button>
     </div>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-
-      <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav mx-auto d-none d-lg-flex gap-4">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="catalogo.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="customisation.html">Customisation</a></li>
         <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
 
-      <!-- Desktop Search + Cart -->
       <div class="d-none d-lg-flex align-items-center gap-3">
         <input class="search-box form-control rounded-pill px-3" placeholder="Search…">
         <a href="cart.html"><i class="bi bi-cart3 fs-4"></i></a>
@@ -49,7 +45,8 @@
       <!-- Mobile Menu -->
       <div class="mobile-menu d-lg-none">
         <a href="index.html" class="mobile-item">Home</a>
-        <a href="catalogo.html" class="mobile-item">Product</a>
+        <a href="catalogo.html" class="mobile-item">Products</a>
+        <a href="customisation.html" class="mobile-item">Customisation</a>
         <a href="aboutus.html" class="mobile-item">About</a>
         <a href="contact.html" class="mobile-item">Contact</a>
       </div>
@@ -65,19 +62,28 @@
   <div class="row align-items-center">
 
     <div class="col-lg-6 mb-4">
-      <h1 class="fw-bold hero-title">Scandinavian Comfort.  
-        <span class="text-highlight">Engineered for a Lifetime.</span>
+      <h1 class="fw-bold hero-title">
+        Indian Craftsmanship.  
+        <span class="text-highlight">Crafted for a Lifetime.</span>
       </h1>
 
       <p class="hero-subtitle mt-3">
-        Every curve, stitch, and cushion is crafted with intention — blending Nordic warmth 
-        with timeless Indian craftsmanship.
+        Every sofa is hand-built by master artisans in India, using sustainable materials, 
+        refined aesthetics, and comfort that lasts for years — not seasons.
       </p>
 
       <div class="d-flex flex-wrap gap-3 mt-4">
         <a href="catalogo.html" class="btn primary-btn px-4 py-2">Explore Collection</a>
         <a href="product.html" class="btn outline-btn px-4 py-2">Premium Range</a>
       </div>
+
+      <!-- ECO BADGES -->
+      <div class="eco-badges d-flex flex-wrap gap-2 mt-3">
+        <span class="eco-tag"><i class="bi bi-leaf"></i> Organic Cotton</span>
+        <span class="eco-tag"><i class="bi bi-star"></i> Plant Leather</span>
+        <span class="eco-tag"><i class="bi bi-recycle"></i> Recycled Fabric</span>
+      </div>
+
     </div>
 
     <div class="col-lg-6 text-center">
@@ -91,11 +97,14 @@
 <!-- ================= FEATURES ================= -->
 <section class="features container py-5">
   <div class="row g-4">
+
     <div class="col-md-4">
       <div class="feature-card text-center p-4 rounded">
         <i class="bi bi-gem fs-1 mb-2"></i>
         <h5>Premium Materials</h5>
-        <p class="text-muted small">Luxury-grade fabrics & kiln-dried hardwood built for decades.</p>
+        <p class="text-muted small">
+          Organic cotton, linen, hemp, recycled polyester — built with responsibly sourced hardwood.
+        </p>
       </div>
     </div>
 
@@ -103,7 +112,9 @@
       <div class="feature-card text-center p-4 rounded">
         <i class="bi bi-heart-pulse fs-1 mb-2"></i>
         <h5>Ergonomic Comfort</h5>
-        <p class="text-muted small">Engineered cushion density for perfect posture support.</p>
+        <p class="text-muted small">
+          Cushioning designed for long-term support, pressure relief, and everyday lounging.
+        </p>
       </div>
     </div>
 
@@ -111,9 +122,12 @@
       <div class="feature-card text-center p-4 rounded">
         <i class="bi bi-recycle fs-1 mb-2"></i>
         <h5>Sustainable Design</h5>
-        <p class="text-muted small">Ethically sourced wood & eco-friendly fabrics.</p>
+        <p class="text-muted small">
+          Handcrafted in India with eco-conscious materials and low-impact manufacturing.
+        </p>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -124,52 +138,32 @@
     <h2 class="fw-bold">Designed to Feel Like Home</h2>
 
     <p class="story-text mt-3 text-muted">
-      Soffa is a luxury furniture house inspired by Nordic philosophy —
-      simplicity, warmth, and timelessness.  
-      Every sofa is handcrafted by senior artisans with 15+ years of mastery,
-      using premium Scandinavian fabrics, warp-resistant hardwood, 
-      and cushion technology engineered for enduring comfort.
+      SOFFA is an Indian furniture studio focused on thoughtful design, meaningful craftsmanship, 
+      and sustainable material innovation.  
+      Every piece is handcrafted by skilled artisans with decades of experience.
+    </p>
+
+    <p class="story-text text-muted mt-3">
+      We work with contemporary Indian textiles — organic cotton, linen, hemp, and recycled polyester — 
+      along with plant-based leather alternatives including orange, pineapple, cactus, and mushroom leather.
     </p>
 
     <p class="story-text text-muted mt-3">
       No mass production. No shortcuts.  
-      Just craftsmanship that speaks through every curve and stitch.
+      Just precision, comfort, and durability crafted for a lifetime.
     </p>
   </div>
 </section>
 
 
 <!-- ================= CUSTOMIZATION SECTION ================= -->
-<section class="custom-section container py-5">
-  <h2 class="fw-bold mb-3">Custom-Built for Your Space</h2>
-  <div class="section-line mb-3"></div>
 
-  <p class="text-muted mb-4">
-    Tailor your sofa with 18+ fabrics, 12 signature colors, modular sizing,
-    stitching options, and cushioning levels.  
-    Your comfort — crafted your way.
-  </p>
-
-  <div class="row g-4">
-    <div class="col-md-3 col-6">
-      <div class="custom-box p-4 text-center rounded">Velvet</div>
-    </div>
-    <div class="col-md-3 col-6">
-      <div class="custom-box p-4 text-center rounded">Nordic Linen</div>
-    </div>
-    <div class="col-md-3 col-6">
-      <div class="custom-box p-4 text-center rounded">Pastel Brown</div>
-    </div>
-    <div class="col-md-3 col-6">
-      <div class="custom-box p-4 text-center rounded">Espresso Wood</div>
-    </div>
-  </div>
-</section>
+  
 
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer text-center text-white py-3">
-  © 2025 SOFFA — Crafted with Nordic calm, Indian soul.
+  © 2025 SOFFA — Handcrafted in India with sustainable materials.
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

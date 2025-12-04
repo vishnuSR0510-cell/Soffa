@@ -13,32 +13,28 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR (same theme as home) ================= -->
 <nav class="soffa-nav navbar navbar-expand-lg">
   <div class="container d-flex align-items-center justify-content-between">
 
-    <!-- Logo -->
     <a class="navbar-brand fw-bold fs-2" href="index.html">SOFFA</a>
 
-    <!-- Right Icons (Mobile Only) -->
     <div class="nav-icons d-lg-none d-flex align-items-center gap-3">
       <a href="cart.html"><i class="bi bi-cart3 fs-4"></i></a>
-      <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <i class="bi bi-list fs-1"></i>
       </button>
     </div>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-
-      <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav mx-auto d-none d-lg-flex gap-4">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="catalogo.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="customisation.html">Customisation</a></li>
         <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
 
-      <!-- Desktop Search + Cart -->
       <div class="d-none d-lg-flex align-items-center gap-3">
         <input class="search-box form-control rounded-pill px-3" placeholder="Search…">
         <a href="cart.html"><i class="bi bi-cart3 fs-4"></i></a>
@@ -47,7 +43,8 @@
       <!-- Mobile Menu -->
       <div class="mobile-menu d-lg-none">
         <a href="index.html" class="mobile-item">Home</a>
-        <a href="catalogo.html" class="mobile-item">Product</a>
+        <a href="catalogo.html" class="mobile-item">Products</a>
+        <a href="customisation.html" class="mobile-item">Customisation</a>
         <a href="aboutus.html" class="mobile-item">About</a>
         <a href="contact.html" class="mobile-item">Contact</a>
       </div>
@@ -206,9 +203,10 @@
 </section>
 
 
+
 <!-- ================= FOOTER ================= -->
-<footer class="footer text-white text-center py-3">
-    © 2025 SOFFA — Scandinavian Furniture Co.
+<footer class="footer text-center text-white py-3">
+  © 2025 SOFFA — Handcrafted in India with sustainable materials.
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

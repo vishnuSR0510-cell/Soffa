@@ -143,3 +143,31 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("orderSuccess").classList.remove("d-none");
     });
 });
+function loadCustomConfig() {
+
+    let config = JSON.parse(localStorage.getItem("custom_config")) || {};
+    let price = localStorage.getItem("custom_price") || "0";
+
+    let box = document.getElementById("configDetails");
+    let priceBox = document.getElementById("configTotal");
+
+    if (!box) return;
+
+    let html = "";
+
+    for (let key in config) {
+        if (config[key]) {
+            html += `
+                <div class="d-flex justify-content-between">
+                    <span>${key.charAt(0).toUpperCase() + key.slice(1)}</span>
+                    <span class="fw-semibold">${config[key]}</span>
+                </div>
+            `;
+        }
+    }
+
+    box.innerHTML = html;
+    priceBox.innerText = "₹" + price;
+}
+
+document.addEventListener("DOMContentLoaded", loadCustomConfig);
