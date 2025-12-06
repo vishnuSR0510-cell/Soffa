@@ -1,0 +1,99 @@
+:root{
+  --cream:#f4efe8;
+  --brown:#6b4f35;
+  --dark:#2c2c2c;
+  --border:#d7cfc6;
+  --white:#ffffff;
+}
+
+body{
+  background:var(--cream);
+  font-family:"Inter",sans-serif;
+  color:var(--dark);
+}
+
+/* NAVBAR */
+.soffa-nav{
+  background:var(--cream);
+  border-bottom:1px solid var(--border);
+}
+
+.navbar-brand{
+  color:var(--brown);
+}
+
+.nav-link{
+  color:var(--dark)!important;
+  font-weight:500;
+}
+
+.nav-link:hover{
+  color:var(--brown)!important;
+}
+
+/* MOBILE */
+.mobile-menu{
+  background:var(--cream);
+  border-top:1px solid var(--border);
+}
+
+/* BOX */
+.checkout-box,
+.summary-box{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:18px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* TITLES */
+.section-heading{
+  color:var(--brown);
+  font-weight:600;
+}
+
+.total-line span:last-child{
+  color:var(--brown);
+  font-size:1.2rem;
+}
+
+/* INPUTS */
+.form-field{
+  border:1px solid var(--border);
+  border-radius:10px;
+}
+
+.form-field:focus{
+  border-color:var(--brown);
+  box-shadow:0 0 0 0.2rem rgba(107,79,53,0.25);
+}
+
+/* BUTTON */
+.checkout-btn{
+  background:var(--brown);
+  color:#fff;
+  border-radius:12px;
+  font-weight:600;
+}
+
+.checkout-btn:hover{
+  background:var(--dark);
+}
+
+/* PAYMENT */
+.payment-option{
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+}
+
+.payment-option.active-option{
+  background:var(--brown);
+  color:#fff;
+}
+
+/* FOOTER */
+.footer{
+  background:var(--brown);
+  color:#fff;
+}

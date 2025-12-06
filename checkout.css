@@ -1,216 +1,177 @@
-body {
-    background: #2E1F1A;
-    font-family: 'Inter', sans-serif;
+/* ===================== COLORS ===================== */
+:root{
+  --sisal: #D9D4C5;
+  --sandrift: #A6907C;
+  --pastel: #8C6B58;
+  --espresso: #59211C;
+  --wood: #260303;
+
+  --white: #fff;
+  --text: #2c2c2c;
+  --muted: #6E6B68;
+  --border: rgba(0,0,0,0.12);
 }
 
-/* BOXES */
-.checkout-box, .summary-box {
-    background: #3B2A24;
-    color: #F3EDE6;
-    border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+/* ================= GLOBAL ================= */
+body{
+  background: var(--sisal);
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  margin:0;
 }
 
-.section-heading {
-    color: #C9A074;
-    font-weight: 700;
+h5{
+  color: var(--wood);
+  font-weight:600;
 }
 
-/* Form Fields */
-.form-field {
-    background: #2E1F1A;
-    border: 1px solid #C9A074;
-    color: #F3EDE6;
+/* ================= NAVBAR ================= */
+.soffa-nav{
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
 }
 
-.form-field::placeholder {
-    color: #C9A074;
+.navbar-brand{
+  color: var(--wood);
+  font-weight:700;
 }
 
-/* Payment Options */
-.payment-option {
-    background: #2E1F1A;
-    border: 1px solid #C9A074;
-    color: #F3EDE6;
-    cursor: pointer;
-    transition: 0.3s;
+.nav-link{
+  color: var(--wood) !important;
+  font-weight:500;
 }
 
-.payment-option:hover {
-    background: #C9A074;
-    color: #2E1F1A;
+.nav-link:hover,
+.nav-link.active{
+  color: var(--pastel) !important;
 }
 
-/* Summary Box */
-.free-delivery {
-    background: #C9A074;
-    color: #2E1F1A;
-    font-weight: bold;
-    border-radius: 10px;
+.search-box{
+  border:1px solid var(--border);
+  background:white;
+  width:200px;
+  font-size:.9rem;
 }
 
-/* Checkout Button */
-.checkout-btn {
-    background: #C9A074;
-    color: #2E1F1A;
-    border: none;
-    border-radius: 50px;
-    font-size: 18px;
-    transition: 0.3s;
+/* ================= MOBILE MENU ================= */
+.mobile-menu{
+  background: var(--white);
+  padding:12px;
+  border-top:1px solid var(--border);
 }
 
-.checkout-btn:hover {
-    background: #A68155;
-}
-/* PAYMENT OPTION BOXES */
-.payment-option {
-    background: #222;          /* clean dark grey */
-    border: 1px solid #444;    /* visible border */
-    color: #f2f2f2;            /* white text */
-    border-radius: 10px;
-    transition: 0.2s ease;
+.mobile-item{
+  display:block;
+  padding:12px 0;
+  font-size:1rem;
+  color:var(--wood);
+  border-bottom:1px solid var(--border);
+  text-decoration:none;
 }
 
-/* Disabled payment options */
-.payment-option.disabled-option {
-    opacity: 0.45;
-    cursor: not-allowed;
+.mobile-item:last-child{
+  border-bottom:none;
 }
 
-/* Active/Available Payment Option */
-.payment-option.active-option {
-    border: 1px solid #d4af37; /* gold border */
-    background: #2b2b2b;       /* slightly brighter dark */
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.35);
-    color: #fff;
+.mobile-item:hover{
+  color:var(--pastel);
 }
 
-/* Radio buttons */
-.payment-option input {
-    transform: scale(1.25);
-    accent-color: #d4af37;     /* gold radio selection */
-    cursor: pointer;
-}
-/* ================= ORDER SUMMARY BOX ================= */
-.summary-box {
-    background: #131313;        /* deep charcoal */
-    border: 1px solid #d4af37;  /* gold border */
-    color: #fff;                /* visible text */
+/* ================= FORM ================= */
+.form-field{
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--white);
 }
 
-/* title */
-.summary-box .section-heading {
-    color: #d4af37;
-    font-weight: 600;
+.form-field:focus{
+  border-color:var(--pastel);
+  box-shadow:0 0 0 0.2rem rgba(140,107,88,.25);
 }
 
-/* each item */
-.checkout-item {
-    background: #1d1d1d !important;
-    border: 1px solid #2e2e2e;
+/* ================= BOXES ================= */
+.checkout-box,
+.summary-box{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
+  color:var(--text);
 }
 
-.checkout-item .text-light {
-    color: #ffffff !important;
+/* ================= BUTTONS ================= */
+.checkout-btn{
+  background:var(--pastel);
+  color:white;
+  border:none;
+  border-radius:12px;
+  font-weight:600;
+  font-size:1.05rem;
+  transition:.3s;
 }
 
-.checkout-item .text-muted {
-    color: #b5b5b5 !important;
+.checkout-btn:hover{
+  background:var(--espresso);
 }
 
-/* price */
-.checkout-item div:last-child {
-    color: #d4af37 !important;
+.btn{
+  border-radius:12px;
 }
 
-/* subtotal row */
-#checkoutSubtotal {
-    color: #d4af37 !important;
-    font-weight: 700;
+/* ================= PAYMENT ================= */
+.payment-option{
+  border:1px solid var(--border);
+  background:var(--white);
+  border-radius:12px;
 }
 
-/* free delivery box */
-.free-delivery {
-    background: #222;
-    border: 1px solid #2f2f2f;
-    color: #d4ff9e;
-    font-weight: 600;
+.active-option{
+  background:var(--pastel);
+  color:white;
+  border-color:var(--pastel);
 }
 
-/* checkout button */
-.checkout-btn {
-    background: #d4af37;
-    color: #000;
-    font-weight: 600;
-    border-radius: 8px;
-    border: none;
+/* ================= SUMMARY ================= */
+.config-summary{
+  list-style:none;
+  padding-left:0;
 }
 
-.checkout-btn:hover {
-    background: #c29d2f;
-}
-/* ============ THEME COLORS ============ */
-:root {
-    --cream: #f4efe8;
-    --brown: #6b4f35;
-    --dark: #2c2c2c;
+.summary-row{
+  font-size:.95rem;
+  margin-bottom:8px;
+  color:var(--text);
 }
 
-/* ============ NAVBAR BASE ============ */
-.soffa-nav {
-    background: var(--cream);
-    border-bottom: 1px solid #e2d8cf;
+.total-line{
+  font-weight:700;
 }
 
-.soffa-nav .navbar-brand {
-    color: var(--brown);
-    letter-spacing: 1px;
+#customBasePrice,
+#customUpgradePrice,
+#customShipping,
+#customTotalPrice{
+  color:var(--wood);
+  font-weight:600;
 }
 
-.soffa-nav .navbar-nav .nav-link {
-    color: var(--dark);
-    font-weight: 500;
-    padding: 8px 15px;
-    transition: 0.3s;
+/* ================= SHIPPING MESSAGE ================= */
+#shippingMessage{
+  font-size:.9rem;
+  font-weight:500;
+  color:var(--espresso);
 }
 
-.soffa-nav .navbar-nav .nav-link:hover,
-.soffa-nav .navbar-nav .nav-link.active {
-    color: var(--brown);
+/* ================= FOOTER ================= */
+.footer{
+  background:var(--wood);
+  color:white;
 }
 
-/* ============ SEARCH BOX ============ */
-.search-box {
-    border: 1px solid #c9b9a8;
-    background: white;
-    width: 200px;
-}
-
-/* ============ MOBILE MENU ============ */
-.mobile-menu {
-    background: var(--cream);
-    padding: 15px;
-    border-top: 1px solid #d9c9b8;
-}
-
-.mobile-item {
-    display: block;
-    padding: 12px 0;
-    font-size: 1.1rem;
-    color: var(--dark);
-    border-bottom: 1px solid #e2d8cf;
-    text-decoration: none;
-}
-
-.mobile-item:last-child {
-    border-bottom: none;
-}
-
-.mobile-item:hover {
-    color: var(--brown);
-}
-
-/* Mobile icons */
-.nav-icons i {
-    color: var(--dark);
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+  .checkout-box,
+  .summary-box{
+    padding:18px;
+  }
 }

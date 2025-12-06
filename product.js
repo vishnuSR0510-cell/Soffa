@@ -1,161 +1,45 @@
 // ===========================================================
-// PRODUCT DATA (20 ITEMS) — UPDATED INDIA VERSION
+// PRODUCT DATA (20 ITEMS) — INDIA FABRIC COLLECTION
+// 3 IMAGES PER PRODUCT
 // ===========================================================
 
 const productData = {
-    "sofa1": { 
-        name: "Luxe Craft",
-        price: 45999, 
-        img: "sofa.png", 
-        desc: "Premium Indian sofa crafted with organic cotton upholstery for rich comfort. Crafted for a lifetime."
-    },
+    "sofa1": { name: "Kalamkari Collection", price: 45999, images: ["k11.jpg", "k12.jpg", "k13.jpg"], desc: "Detailed hand-drawn motifs add narrative and artistic depth to the sofa surface." },
+    "sofa2": { name: "Kalamkari Collection", price: 39499, images: ["k21.jpg", "k22.jpg", "k23.jpg"], desc: "Softer cotton-blend textiles keep it comfortable enough for everyday use." },
+    "sofa3": { name: "Kalamkari Collection", price: 52499, images: ["k31.jpg", "k32.jpg", "k33.jpg"], desc: "Pairs best with wooden interiors, muted palettes, and classic Indian aesthetics." },
+    "sofa4": { name: "Kalamkari Collection", price: 48999, images: ["k41.jpg", "k42.jpg", "k43.jpg"], desc: "Appeals to buyers who value storytelling, craft history, and refined cultural expression." },
+    "sofa5": { name: "Chikankari Collection", price: 42999, images: ["c11.jpg", "c12.jpg", "c13.jpg"], desc: "Subtle embroidered textures create an upscale, lightweight, and tactile surface." },
+    "sofa6": { name: "Chikankari Collection", price: 54999, images: ["c21.jpg", "c22.jpg", "c23.jpg"], desc: "Softer fabrics deliver a clean, luxury-minimal look with detailed craftsmanship." },
+    "sofa7": { name: "Chikankari Collection", price: 59999, images: ["c31.jpg", "c32.jpg", "c33.jpg"], desc: "Best suited for bright interiors, pastel palettes, and calm living spaces." },
+    "sofa8": { name: "Chikankari Collection", price: 46499, images: ["c41.jpg", "c42.jpg", "c43.jpg"], desc: "Designed for customers who want elegance without heavy prints or loud colours." },
+    "sofa9": { name: "Ajrakh Collection", price: 44999, images: ["a11.jpg", "a12.jpg", "a13.jpg"], desc: "Natural dyes and geometric block prints deliver a bold, heritage-driven visual identity." },
+    "sofa10": { name: "Ajrakh Collection", price: 38999, images: ["a21.jpg", "a22.jpg", "a23.jpg"], desc: "Dense cotton fabric gives the sofa durability without sacrificing comfort." },
+    "sofa11": { name: "Ajrakh Collection", price: 43999, images: ["a31.jpg", "a32.jpg", "a33.jpg"], desc: "Works well in contemporary interiors with earthy, terracotta-tone palettes." },
+    "sofa12": { name: "Ajrakh Collection", price: 57999, images: ["a41.jpg", "a42.jpg", "a43.jpg"], desc: "Ideal for customers who want cultural detail without excessive ornamentation." },
+    "sofa13": { name: "Tie-Dye Collection", price: 62999, images: ["t11.jpg", "t12.jpg", "t13.jpg"], desc: "Hand-dyed gradients create unpredictable, organic patterns — no two sofas look identical." },
+    "sofa14": { name: "Tie-Dye Collection", price: 49999, images: ["t21.jpg", "t22.jpg", "t23.jpg"], desc: "Lightweight cotton blends keep the seating breathable, casual, and easy to maintain." },
+    "sofa15": { name: "Tie-Dye Collection", price: 29999, images: ["t31.jpg", "t32.jpg", "t33.jpg"], desc: "Patterns work best in relaxed, bohemian, or minimal modern interiors that need character." },
+    "sofa16": { name: "Tie-Dye Collection", price: 68999, images: ["t41.jpg", "t42.jpg", "t43.jpg"], desc: "Perfect for buyers who want a playful statement piece without looking loud or cheap." },
 
-    "sofa2": { 
-        name: "Urban Comfort", 
-        price: 39499, 
-        img: "sofa2.png", 
-        desc: "Compact Indian-made sofa designed for modern apartments with sustainable linen fabric. Crafted for a lifetime."
-    },
+    // FIXED BROKEN IMAGES
+    "sofa17": { name: "Kantha Collection", price: 74999, images: ["kantha1.jpg", "kantha2.jpg", "kantha3.jpg"], desc: "Bold, multi-coloured embroidery brings high visual energy and cultural punch." },
 
-    "sofa3": { 
-        name: "Max Comfort", 
-        price: 52499, 
-        img: "sofa3.png", 
-        desc: "Deep cushioning handmade in India using soft hemp fabric for everyday comfort. Crafted for a lifetime."
-    },
-
-    "sofa4": { 
-        name: "Lounge Master", 
-        price: 48999, 
-        img: "sofa4.png", 
-        desc: "Relaxed seating profile designed by Indian artisans, wrapped in recycled polyester. Crafted for a lifetime."
-    },
-
-    "sofa5": { 
-        name: "Classic Wood", 
-        price: 42999, 
-        img: "sofa5.png", 
-        desc: "Minimal wooden frame handcrafted in India using sustainable materials. Crafted for a lifetime."
-    },
-
-    "sofa6": { 
-        name: "Valley Fabric", 
-        price: 54999, 
-        img: "sofa6.png", 
-        desc: "Premium Indian-made sofa with organic cotton and kiln-dried hardwood. Crafted for a lifetime."
-    },
-
-    "sofa7": { 
-        name: "Astra Comfort", 
-        price: 59999, 
-        img: "sofa7.png", 
-        desc: "Wide deep seating crafted by Indian artisans with eco-friendly fabrics. Crafted for a lifetime."
-    },
-
-    "sofa8": { 
-        name: "Melo Arc", 
-        price: 46499, 
-        img: "sofa8.png", 
-        desc: "Elegant curved design made in India using sustainable hemp fabric. Crafted for a lifetime."
-    },
-
-    "sofa9": { 
-        name: "Wood Craft Sofa", 
-        price: 44999, 
-        img: "sofa9.png", 
-        desc: "Natural wood details paired with organic cotton upholstery. Made in India. Crafted for a lifetime."
-    },
-
-    "sofa10": { 
-        name: "Beige Classic", 
-        price: 38999, 
-        img: "sofa10.png", 
-        desc: "Soft beige edition crafted with recycled polyester for durability. Made in India. Crafted for a lifetime."
-    },
-
-    "sofa11": { 
-        name: "Verde Craft", 
-        price: 43999, 
-        img: "sofa11.png", 
-        desc: "Eco-friendly Indian sofa using hemp fabric and high-density padding. Crafted for a lifetime."
-    },
-
-    "sofa12": { 
-        name: "Pastel Set", 
-        price: 57999, 
-        img: "sofa12.png", 
-        desc: "Soft pastel shades made in India with recycled materials. Crafted for a lifetime."
-    },
-
-    "sofa13": { 
-        name: "Cloud Soft", 
-        price: 62999, 
-        img: "sofa13.png", 
-        desc: "Feather-like softness crafted using premium Indian fabrics. Crafted for a lifetime."
-    },
-
-    "sofa14": { 
-        name: "Stitch Luxe", 
-        price: 49999, 
-        img: "sofa14.png", 
-        desc: "Detailed stitching handcrafted in India using organic cotton. Crafted for a lifetime."
-    },
-
-    "sofa15": { 
-        name: "Compact Duo", 
-        price: 29999, 
-        img: "sofa15.png", 
-        desc: "Compact Indian-made 2-seater perfect for small homes. Crafted for a lifetime."
-    },
-
-    "sofa16": { 
-        name: "Royal Comfort", 
-        price: 68999, 
-        img: "sofa16.png", 
-        desc: "Luxury velvet seating designed and handcrafted in India. Crafted for a lifetime."
-    },
-
-    "sofa17": { 
-        name: "Feather Blend", 
-        price: 74999, 
-        img: "sofa17.png", 
-        desc: "Feather-blend cushions wrapped in soft Indian recycled fabric. Crafted for a lifetime."
-    },
-
-    "sofa18": { 
-        name: "Zen Minimal", 
-        price: 41999, 
-        img: "sofa18.png", 
-        desc: "Minimalist design inspired by Indian craftsmanship with hemp fabric. Crafted for a lifetime."
-    },
-
-    "sofa19": { 
-        name: "Linear Craft", 
-        price: 58999, 
-        img: "sofa19.png", 
-        desc: "Straight-line silhouette handcrafted with organic cotton. Made in India. Crafted for a lifetime."
-    },
-
-    "sofa20": { 
-        name: "Haven Comfort", 
-        price: 64499, 
-        img: "sofa20.png", 
-        desc: "Indian-made sofa built with sustainable materials for long-lasting support. Crafted for a lifetime."
-    }
+    "sofa18": { name: "Phulkari Collection", price: 41999, images: ["p11.jpg", "p12.jpg", "p13.jpg"], desc: "Bold, multi-coloured embroidery brings high visual energy and cultural punch." },
+    "sofa19": { name: "Phulkari Collection", price: 58999, images: ["p21.jpg", "p22.jpg", "p23.jpg"], desc: "Heavier fabrics add structure to the sofa, making it feel plush and substantial." },
+    "sofa20": { name: "Phulkari Collection", price: 64499, images: ["p31.jpg", "p32.jpg", "p33.jpg"], desc: "Works well as a focal point in neutral interiors that can accommodate bold accents." }
 };
 
 
 // ===========================================================
-// LOAD PRODUCT BY ID
+// LOAD PRODUCT + IMAGES
 // ===========================================================
+
 function loadProduct() {
+
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
-    if (!id || !productData[id]) {
-        document.querySelector(".product-title").innerText = "Product Not Found";
-        return;
-    }
+    if (!id || !productData[id]) return;
 
     const p = productData[id];
 
@@ -164,67 +48,83 @@ function loadProduct() {
     document.querySelector(".price-tag").innerText = "₹" + p.price.toLocaleString();
     document.querySelector(".product-description").innerText = p.desc;
 
-    document.getElementById("mainImage").src = p.img;
+    const mainImg = document.getElementById("mainImage");
+    mainImg.src = p.images[0];
 
-    ["thumb1", "thumb2", "thumb3", "thumb4"].forEach(imgId => {
-        document.getElementById(imgId).src = p.img;
-    });
-
-    document.querySelectorAll(".thumb").forEach(btn => {
-        btn.setAttribute("data-src", p.img);
+    // assign thumbnails
+    ["thumb1", "thumb2", "thumb3"].forEach((id, i) => {
+        const img = document.getElementById(id);
+        img.src = p.images[i];
+        img.dataset.src = p.images[i];
+        img.onclick = () => switchImage(p.images[i], img);
     });
 }
 
-document.addEventListener("DOMContentLoaded", loadProduct);
 
 // ===========================================================
-// THUMBNAIL SWITCH
+// SWITCH IMAGE ON CLICK
 // ===========================================================
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".thumb").forEach(btn => {
-        btn.addEventListener("click", () => {
-            document.getElementById("mainImage").src = btn.getAttribute("data-src");
-        });
-    });
+
+function switchImage(src, el) {
+
+    document.getElementById("mainImage").src = src;
+
+    document.querySelectorAll(".thumb-img")
+        .forEach(t => t.classList.remove("active"));
+
+    el.classList.add("active");
+}
+
+
+// ===========================================================
+// CLICK TO ZOOM
+// ===========================================================
+
+document.addEventListener("click", e => {
+    const img = document.getElementById("mainImage");
+    if (e.target !== img) return;
+    img.classList.toggle("zoomed");
 });
+
 
 // ===========================================================
 // QUANTITY CONTROL
 // ===========================================================
+
 document.addEventListener("DOMContentLoaded", () => {
     const qtyInput = document.querySelector(".qty-input");
-
-    document.querySelector(".qty-plus").onclick = () =>
-        qtyInput.value = Number(qtyInput.value) + 1;
-
-    document.querySelector(".qty-minus").onclick = () =>
-        qtyInput.value = Math.max(1, Number(qtyInput.value) - 1);
+    document.querySelector(".qty-plus").onclick = () => qtyInput.value++;
+    document.querySelector(".qty-minus").onclick = () => qtyInput.value = Math.max(1, qtyInput.value - 1);
 });
 
+
 // ===========================================================
-// ADD TO CART → FIXED VERSION
+// ADD TO CART
 // ===========================================================
+
 document.addEventListener("DOMContentLoaded", () => {
 
     function addCurrentProductToCart() {
 
         const params = new URLSearchParams(window.location.search);
-        const productId = params.get("id"); // VERY IMPORTANT
+        const id = params.get("id");
+        const p = productData[id];
 
         const product = {
-            id: productId,
-            name: document.querySelector(".product-title").innerText,
-            price: Number(document.querySelector(".price-tag").innerText.replace(/[^0-9]/g, "")),
+            id,
+            name: p.name,
+            price: p.price,
             img: document.getElementById("mainImage").src,
-            fabric: document.querySelector(".option-btn.active")?.getAttribute("data-val") || "Default Fabric",
-            color: document.querySelector(".color-dot.selected")?.getAttribute("data-val") || "Default Color",
-            qty: Number(document.querySelector(".qty-input").value)
+            qty: Number(document.querySelector(".qty-input").value),
         };
 
         addToCart(product);
         alert("Added to cart!");
     }
 
-    document.getElementById("addToCartBtn")
-        .addEventListener("click", addCurrentProductToCart);
+    document.getElementById("addToCartBtn").addEventListener("click", addCurrentProductToCart);
 });
+
+
+// INIT
+document.addEventListener("DOMContentLoaded", loadProduct);

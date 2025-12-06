@@ -190,3 +190,35 @@ body{
 .nav-icons i {
     color: var(--dark);
 }
+.main-image img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: zoom-in;
+  transition: .3s;
+}
+
+.main-image img.zoomed {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+.thumbs .thumb {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.thumb-img {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: .2s;
+}
+
+.thumb-img.active,
+.thumb-img:hover {
+  border-color: var(--brown);
+}

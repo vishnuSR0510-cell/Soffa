@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soffa — Checkout</title>
+    <title>Sitcom-space Checkout</title>
 
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="checkout.css" />
 </head>
 
@@ -17,10 +19,8 @@
 <nav class="soffa-nav navbar navbar-expand-lg">
   <div class="container d-flex align-items-center justify-content-between">
 
-    <!-- Logo -->
-    <a class="navbar-brand fw-bold fs-2" href="index.html">SOFFA</a>
+    <a class="navbar-brand fw-bold fs-2" href="index.html">Sitcom-space</a>
 
-    <!-- Right Icons (Mobile Only) -->
     <div class="nav-icons d-lg-none d-flex align-items-center gap-3">
       <a href="cart.html"><i class="bi bi-cart3 fs-4"></i></a>
       <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -30,7 +30,6 @@
 
     <div class="collapse navbar-collapse" id="mainNav">
 
-      <!-- Desktop Menu -->
       <ul class="navbar-nav mx-auto d-none d-lg-flex gap-4">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="catalogo.html">Product</a></li>
@@ -38,13 +37,11 @@
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
 
-      <!-- Desktop Search + Cart -->
       <div class="d-none d-lg-flex align-items-center gap-3">
         <input class="search-box form-control rounded-pill px-3" placeholder="Search…">
         <a href="cart.html"><i class="bi bi-cart3 fs-4"></i></a>
       </div>
 
-      <!-- Mobile Menu -->
       <div class="mobile-menu d-lg-none">
         <a href="index.html" class="mobile-item">Home</a>
         <a href="catalogo.html" class="mobile-item">Product</a>
@@ -62,7 +59,7 @@
 <section class="container py-5">
     <div class="row g-4">
 
-        <!-- LEFT: BILLING DETAILS -->
+        <!-- LEFT FORM -->
         <div id="checkoutFormArea" class="col-lg-7">
             <div class="checkout-box p-4 rounded">
 
@@ -77,105 +74,85 @@
                     </div>
 
                     <div class="col-md-6">
-                        <label class="form-label">Phone Number</label>
+                        <label class="form-label">Phone</label>
                         <input id="phone" type="text" class="form-control form-field">
-                        <small id="phoneError" class="text-danger d-none">Enter 10-digit mobile number</small>
+                        <small id="phoneError" class="text-danger d-none">Enter valid phone</small>
                     </div>
 
-                    <div class="col-12">
-                        <label class="form-label">Email Address</label>
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
                         <input id="email" type="email" class="form-control form-field">
-                        <small id="emailError" class="text-danger d-none">Enter a valid email</small>
+                        <small id="emailError" class="text-danger d-none">Enter valid email</small>
                     </div>
 
-                    <div class="col-12">
-                        <label class="form-label">Delivery Address</label>
-                        <textarea id="address" class="form-control form-field" rows="3"></textarea>
-                        <small id="addressError" class="text-danger d-none">Address cannot be empty</small>
+                    <div class="col-md-6">
+                        <label class="form-label">Country</label>
+                        <input id="country" class="form-control form-field" placeholder="India, USA, UK">
+                        <small id="countryError" class="text-danger d-none">Required</small>
                     </div>
 
                     <div class="col-md-6">
                         <label class="form-label">State</label>
-                        <select id="state" class="form-control form-field">
-                            <option value="">Select State</option>
-                            <option>Tamil Nadu</option>
-                            <option>Karnataka</option>
-                            <option>Kerala</option>
-                            <option>Andhra Pradesh</option>
-                            <option>Telangana</option>
-                            <option>Maharashtra</option>
-                        </select>
-                        <small id="stateError" class="text-danger d-none">Select state</small>
+                        <input id="state" class="form-control form-field">
+                        <small id="stateError" class="text-danger d-none">Required</small>
                     </div>
 
                     <div class="col-md-6">
                         <label class="form-label">City</label>
-                        <select id="city" class="form-control form-field">
-                            <option value="">Select City</option>
-                        </select>
-                        <small id="cityError" class="text-danger d-none">Select city</small>
+                        <input id="city" class="form-control form-field">
+                        <small id="cityError" class="text-danger d-none">Required</small>
                     </div>
 
                     <div class="col-md-6">
-                        <label class="form-label">Pincode</label>
+                        <label class="form-label">Postal Code</label>
                         <input id="pincode" class="form-control form-field">
-                        <small id="pinError" class="text-danger d-none">Enter 6-digit pincode</small>
+                        <small id="pinError" class="text-danger d-none">Invalid code</small>
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Address</label>
+                        <textarea id="address" class="form-control form-field" rows="2"></textarea>
+                        <small id="addressError" class="text-danger d-none">Required</small>
                     </div>
 
                 </div>
-
-                <hr class="my-4">
-
-                <h5 class="section-heading mb-3">Payment Method</h5>
-
-                <div class="payment-option disabled-option p-3 rounded mb-2">
-                    <input type="radio" disabled>
-                    <span class="ms-2">UPI (Not Available)</span>
-                </div>
-
-                <div class="payment-option disabled-option p-3 rounded mb-2">
-                    <input type="radio" disabled>
-                    <span class="ms-2">Debit / Credit Card (Not Available)</span>
-                </div>
-
-                <div class="payment-option active-option p-3 rounded mb-2">
-                    <input type="radio" name="payment" checked>
-                    <span class="ms-2 fw-bold">Cash on Delivery</span>
-                </div>
-
             </div>
         </div>
-<!-- CONFIG SUMMARY -->
-<div class="config-box mt-4 p-3 rounded" style="background:#f4f1ec;">
-    <h5 class="fw-bold mb-3">Selected Customisation</h5>
-    <div id="configDetails"></div>
-</div>
 
-<!-- PRICE -->
-<div class="price-box mt-4 p-3 rounded" style="background:#FFF;">
-    <h5 class="fw-bold mb-3">Configuration Price</h5>
-    <p>Total: <span id="configTotal" class="fw-bold"></span></p>
-</div>
 
-        <!-- RIGHT: ORDER SUMMARY -->
+
+        <!-- RIGHT SUMMARY -->
         <div id="summaryArea" class="col-lg-5">
             <div class="summary-box p-4 rounded">
 
-                <h5 class="section-heading">Order Summary</h5>
+                <h5 class="section-heading mb-3">Order Summary</h5>
+
                 <div id="checkoutItems"></div>
 
                 <hr>
 
-                <div class="d-flex justify-content-between mt-3">
-                    <span class="fw-bold subtotal-label">Subtotal</span>
-                    <span class="fw-bold subtotal-amount" id="checkoutSubtotal">₹0</span>
+                <div class="d-flex justify-content-between mt-2">
+                    <span class="fw-bold">Subtotal</span>
+                    <span class="fw-bold" id="checkoutSubtotal">₹0</span>
                 </div>
 
-                <div class="free-delivery mt-3 p-3 rounded text-center">
-                    🎉 FREE Delivery on all orders!
+                <div class="d-flex justify-content-between mt-2">
+                    <span class="fw-bold">Shipping</span>
+                    <span class="fw-bold" id="shippingCost">₹0</span>
                 </div>
 
-                <button id="placeOrderBtn" class="checkout-btn w-100 mt-4 py-2">Place Order</button>
+                <hr>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <span class="fw-bold">Grand Total</span>
+                    <span class="fw-bold" id="grandTotal">₹0</span>
+                </div>
+
+                <div id="shippingMessage" class="mt-3 p-2 text-center rounded small"></div>
+
+                <button id="placeOrderBtn" class="checkout-btn w-100 mt-4 py-2">
+                    Place Order
+                </button>
 
             </div>
         </div>
@@ -183,8 +160,10 @@
     </div>
 </section>
 
-<!-- ========== ORDER SUCCESS MESSAGE ========== -->
-<div id="orderSuccess" class="text-center p-5 d-none" 
+
+
+<!-- SUCCESS MESSAGE -->
+<div id="orderSuccess" class="text-center p-5 d-none"
      style="background:#f4f1ec;border-radius:20px;max-width:700px;margin:auto;">
 
     <i class="bi bi-check-circle-fill" 
@@ -194,7 +173,6 @@
 
     <p class="text-muted mt-2" style="font-size:1.1rem;">
         Thanks for your order! Our team will reach you on WhatsApp shortly.
-        We appreciate your trust in <strong>SOFFA</strong>.
     </p>
 
     <a href="index.html" 
@@ -204,14 +182,16 @@
     </a>
 </div>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer text-center text-white py-3">
-  © 2025 SOFFA — Handcrafted in India with sustainable materials.
+
+
+<footer class="footer text-center py-3 mt-5">
+  © 2025 Sitcom-space Handcrafted in India with sustainable materials.
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="cart.js"></script>
+<!-- Custom JS -->
 <script src="checkout.js"></script>
 
 </body>
