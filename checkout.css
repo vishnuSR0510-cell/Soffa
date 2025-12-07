@@ -175,3 +175,13 @@ h5{
     padding:18px;
   }
 }
+#summaryArea,
+#summaryArea * {
+  color: var(--wood) !important;
+}
+
+#checkoutSubtotal,
+#shippingCost,
+#grandTotal {
+  font-weight: 700;
+}
