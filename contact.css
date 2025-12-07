@@ -1,192 +1,129 @@
-/* ===================== PALETTE ===================== */
-:root {
-  --cream: #f4efe8;
-  --brown: #6b4f35;
-  --dark: #2c2c2c;
-
+/* ================== COLORS ================== */
+:root{
   --sisal:#D9D4C5;
   --sandrift:#A6907C;
   --pastel:#8C6B58;
   --espresso:#59211C;
   --wood:#260303;
-  
+
   --white:#fff;
-  --border:rgba(0,0,0,0.1);
+  --text:#2c2c2c;
 }
 
-/* ===================== GLOBAL ===================== */
+/* ================== GLOBAL ================== */
 body{
-  background:var(--cream);
+  background:var(--sisal);
+  color:var(--text);
   font-family:"Inter",sans-serif;
-  color:var(--dark);
   margin:0;
-  -webkit-font-smoothing:antialiased;
 }
 
-h1,h2,h3,h4,h5,h6{
-  color:var(--brown);
-  font-weight:600;
+h1,h2,h3,h4,h5{
+  color:var(--wood);
+  font-weight:700;
 }
 
-p{
-  color:var(--dark);
-  opacity:.8;
-  line-height:1.6;
+/* ================== NAVBAR ================== */
+.soffa-nav{
+  background:var(--white);
+  border-bottom:1px solid rgba(0,0,0,0.08);
 }
 
-img{
-  border-radius:10px;
+.nav-link{
+  color:var(--wood)!important;
+}
+.nav-link:hover{
+  color:var(--pastel)!important;
 }
 
-/* ===================== NAVBAR ===================== */
-.soffa-nav {
-  background: var(--cream);
-  border-bottom: 1px solid #e2d8cf;
-  padding: 12px 0;
+/* ================== HERO ================== */
+.contact-hero{
+  text-align:center;
+  max-width:780px;
 }
 
-.soffa-nav .navbar-brand {
-  color: var(--brown);
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.soffa-nav .navbar-nav .nav-link {
-  color: var(--dark);
-  font-weight: 500;
-  padding: 8px 15px;
-  transition: 0.3s ease;
-  font-size: 1rem;
-}
-
-.soffa-nav .navbar-nav .nav-link:hover,
-.soffa-nav .navbar-nav .nav-link.active {
-  color: var(--brown);
-}
-
-/* Search box desktop */
-.search-box {
-  border: 1px solid #c9b9a8;
-  background: white;
-  width: 200px;
-  font-size: .9rem;
-}
-
-/* ===================== MOBILE MENU ===================== */
-.mobile-menu {
-  background: var(--cream);
-  padding: 15px;
-  border-top: 1px solid #d9c9b8;
-}
-
-.mobile-item {
-  display: block;
-  padding: 12px 0;
-  font-size: 1.1rem;
-  color: var(--dark);
-  border-bottom: 1px solid #e2d8cf;
-  text-decoration: none;
-}
-
-.mobile-item:last-child {
-  border-bottom: none;
-}
-
-.mobile-item:hover {
-  color: var(--brown);
-}
-
-/* Mobile icons */
-.nav-icons i {
-  color: var(--dark);
-}
-
-/* ===================== HERO ===================== */
-.contact-hero h1{
-  font-size:2.6rem;
-  color:var(--brown);
+.hero-title{
+  font-size:2.8rem;
+  color:var(--wood);
 }
 
 .hero-subtitle{
-  color:var(--dark);
-  opacity:.7;
-  max-width:600px;
-  margin:auto;
-  font-size:1rem;
-}
-
-/* ===================== TEAM CARD ===================== */
-.team-card{
-  background:var(--white);
-  border:1px solid var(--border);
-  border-radius:12px;
-  transition:.3s;
-  padding:20px;
-  text-align:center;
-}
-
-.team-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.team-photo{
-  width:100%;
-  height:180px;
-  background:var(--sandrift);
-  border-radius:12px;
-}
-
-.team-card h5{
-  margin-top:15px;
-  color:var(--brown);
+  color:var(--sandrift);
   font-size:1.1rem;
 }
 
-.team-card p{
-  font-size:.9rem;
-  color:var(--dark);
-  opacity:.7;
-  margin-bottom:6px;
+/* ================== SECTION TITLE ================== */
+.section-title{
+  font-size:2rem;
+  color:var(--wood);
+  font-weight:700;
 }
 
-/* ===================== CONTACT FORM ===================== */
-.contact-input{
-  border:1px solid rgba(0,0,0,0.12);
-  border-radius:10px;
-  padding:12px 14px;
+/* ================== TEAM CARDS ================== */
+.contact-card{
   background:var(--white);
-  font-size:.95rem;
-  color:var(--dark);
+  border:1px solid rgba(0,0,0,0.06);
+  border-radius:14px;
+  box-shadow:0 6px 22px rgba(0,0,0,0.06);
   transition:.3s;
 }
 
-.contact-input:focus{
-  border-color:var(--brown);
-  box-shadow:0 0 0 4px rgba(107,79,53,0.2);
-  outline:none;
+.contact-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
 }
 
-/* ===================== BUTTON ===================== */
-.primary-btn{
-  background:var(--brown);
-  color:var(--white);
-  border:none;
+.role{
+  color:var(--pastel);
+  font-size:.9rem;
+  margin-bottom:14px;
+}
+
+.detail{
+  color:#5b4f45;
+  font-size:.95rem;
+  margin:4px 0;
+}
+
+/* ================== FORM SECTION ================== */
+.contact-form-section{
+  background:var(--white);
+  border-top:1px solid rgba(0,0,0,0.08);
+  padding:60px 0;
+}
+
+.contact-input{
+  background:white;
+  border:1px solid rgba(0,0,0,0.12);
   border-radius:10px;
-  padding:12px 26px;
-  font-weight:500;
+  padding:12px;
+  font-size:1rem;
+}
+
+.contact-input:focus{
+  border-color:var(--pastel);
+  box-shadow:0 0 0 0.25rem rgba(140,107,88,0.3);
+}
+
+/* ================== BUTTON ================== */
+.primary-btn{
+  background:var(--pastel);
+  color:#fff;
+  border:none;
+  border-radius:12px;
+  font-weight:600;
+  font-size:1rem;
   transition:.3s;
 }
 
 .primary-btn:hover{
-  background:var(--dark);
-  transform:translateY(-2px);
+  background:var(--espresso);
+  color:#fff;
 }
 
-/* ===================== FOOTER ===================== */
+/* ================== FOOTER ================== */
 .footer{
-  background:var(--brown);
-  color:var(--white);
+  background:var(--espresso);
+  color:#fff;
   font-size:.9rem;
-  text-align:center;
 }
